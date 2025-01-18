@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, abort, request
 from tamilmv import Tamilmv
 from utils import imdb_retriver
+import os
 
 app = Flask(__name__)
 
@@ -50,4 +51,5 @@ def addon_stream(type, id):
     return respond_with(streams)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 8000))  
+    app.run(debug=True, port=port, host='0.0.0.0')
