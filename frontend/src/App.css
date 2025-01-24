@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)),url('C:\Users\sridhar\Desktop\stremio_addon\frontend\src\background.jpg'); 
+  background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)),url('./background.jpg'); 
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center;
